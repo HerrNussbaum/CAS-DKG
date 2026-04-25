@@ -443,32 +443,29 @@
 <nav>
     <ul>
         <li><a href="#gleichungen-losen-solve-und-zeros">Gleichungen lösen: solve und zeros</a></li>
-        <li><a href="#1-der-befehl-solve">1. Der Befehl solve</a></li>
-        <li><a href="#syntax">Syntax</a></li><li><a href="#beispiel">Beispiel</a></li><li><a href="#erklarung">Erklärung</a></li>
-        <li><a href="#wichtiger-hinweis">Wichtiger Hinweis</a></li>
-        <li><a href="#2-der-befehl-zeros">2. Der Befehl zeros</a></li>
-        <li><a href="#syntax_1">Syntax</a></li><li><a href="#beispiel_1">Beispiel</a></li>
-        <li><a href="#unterschied-zwischen-solve-und-zeros">Unterschied zwischen solve und zeros</a></li>
-        <li><a href="#zusammenhang">Zusammenhang</a></li>
-        <li><a href="#typische-fehler">Typische Fehler</a></li>
-        <li><a href="#erweiterung">Erweiterung</a></li>
-        
+        <li><a href="#der-befehl-solve">Der Befehl solve</a></li><li><a href="#erklarung">Erklärung</a></li><li><a href="#wichtiger-hinweis">Wichtiger Hinweis</a></li><li><a href="#2-der-befehl-zeros">2. Der Befehl zeros</a></li><li><a href="#beispiel_1">Beispiel</a></li><li><a href="#unterschied-zwischen-solve-und-zeros">Unterschied zwischen solve und zeros</a></li><li><a href="#zusammenhang">Zusammenhang</a></li><li><a href="#typische-fehler">Typische Fehler</a></li><li><a href="#erweiterung">Erweiterung</a></li>
     </ul>
 </nav>
 </aside>
             <main id="terminal-mkdocs-main-content">
 <section id="mkdocs-terminal-content">
-    <h2 id="gleichungen-losen-solve-und-zeros">Gleichungen lösen: <code>solve</code> und <code>zeros</code></h2>
+    <h1 id="gleichungen-losen-solve-und-zeros">Gleichungen lösen: <code>solve</code> und <code>zeros</code></h1>
 <p>Mit der TI-Nspire App gibt es zwei zentrale Befehle, um <strong>Nullstellen und Lösungen von Gleichungen</strong> zu bestimmen:</p>
 <ul>
 <li><code>solve</code> → allgemeines Lösen von Gleichungen  </li>
 <li><code>zeros</code> → gezieltes Finden von Nullstellen  </li>
 </ul>
-<hr />
-<h2 id="1-der-befehl-solve">1. Der Befehl <code>solve</code></h2>
-<p>Mit <code>solve</code> kannst du Gleichungen nach einer Variablen auflösen.</p>
-<h3 id="syntax">Syntax</h3>
-<p><code>solve(Gleichung, Variable)</code></p>
+<p><code>solve</code> ist dabei der deutlich mächtigere Befehl, weil er allgemein Gleichungen lösen kann, während <code>zeros</code> nur Nullstellen von Funktionen berechnen kann. Dennoch ist <code>zeros</code> ein nützlicher Befehl, da bei längeren Aufgaben es sich empfiehlt zunächst die Funktion, welche man untersuchen soll, im Taschenrechner zu definieren.</p>
+<h2 id="der-befehl-solve">Der Befehl <code>solve</code></h2>
+<p>Mit <code>solve</code> kannst du Gleichungen nach einer Variablen auflösen. Allgemein ist die Syntax hierbei <code>solve(Gleichung, Variable)</code>. Hier ein Beispiel:
+<img src=".\img\solve1.png" alt="solve Beispiel"/></p>
+<p><code>solve</code> kann nicht nur Gleichungen mit einer Variable lösen. <code>solve</code> kann auch Gleichungen in Abhängigkeit von anderen Variablen lösen. Wir nehmen als Beispiel die Gleichung <script type="math/tex">x^2 - ax + 2= 0</script>. Dies wollen wir in Abhängigkeit von <script type="math/tex">a</script> lösen.
+<script type="math/tex; mode=display">x^2 - ax + 2= 0</script>
+<script type="math/tex; mode=display">=> x_{1,2} = \frac{a}{2} \pm \sqrt{\frac{a^2}{2^2} - 2}</script>
+<script type="math/tex; mode=display">=> x_{1} = \frac{a}{2}+ \sqrt{\frac{a^2}{4} - 2}  \quad \lor \quad  x_{2} = \frac{a}{2} - \sqrt{\frac{a^2}{4}- 2} </script>
+<script type="math/tex; mode=display">=> x_{1} = \frac{a}{2}+ \sqrt{\frac{a^2}{4} - 2}  \quad \lor \quad x_{2} = \frac{a}{2} - \sqrt{\frac{a^2}{4}- 2} </script>
+Wir vergleichen nun mit dem was unser CAS kann:
+ <img src="\img\solve1.png" alt="solve Beispiel"/></p>
 <h3 id="beispiel">Beispiel</h3>
 <p>Wir lösen die Gleichung:</p>
 <p>
@@ -494,7 +491,7 @@
 <hr />
 <h2 id="2-der-befehl-zeros">2. Der Befehl <code>zeros</code></h2>
 <p>Mit <code>zeros</code> bestimmst du die <strong>Nullstellen einer Funktion</strong>.</p>
-<h3 id="syntax_1">Syntax</h3>
+<h3 id="syntax">Syntax</h3>
 <hr />
 <h2 id="beispiel_1">Beispiel</h2>
 <p>Gegeben ist die Funktion:</p>
