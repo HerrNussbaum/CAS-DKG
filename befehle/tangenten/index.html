@@ -19,7 +19,7 @@
 
     
  
-<title>Tangenten und Sekanten mit dem TI-Nspire - CAS/MMS am DKG</title>
+<title>Tangenten - CAS/MMS am DKG</title>
 
 
 <link href="../../css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
@@ -147,15 +147,11 @@
             
     
         
-        
-            
-            
-            <span class="
+        <span class="
         
             
         
-    terminal-mkdocs-side-nav-item terminal-mkdocs-side-nav-section-no-index">Befehle</span>
-        
+    terminal-mkdocs-side-nav-item--active terminal-mkdocs-side-nav-section-no-index">Befehle</span>
     
     
         
@@ -225,6 +221,20 @@
     
     </li>
             
+        
+            
+            
+                
+                
+            
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <span class="terminal-mkdocs-side-nav-item--active">Tangenten</span>
+    
+    </li>
+            
             
     </ul>
         
@@ -235,428 +245,27 @@
 </nav><hr>
 <nav>
     <ul>
-        <li><a href="#tangenten-und-sekanten-mit-dem-ti-nspire">Tangenten und Sekanten mit dem TI-Nspire</a></li>
-        <li><a href="#grundidee-sekante-und-tangente">Grundidee: Sekante und Tangente</a></li><li><a href="#welche-ti-nspire-werkzeuge-sind-relevant">Welche TI-Nspire-Werkzeuge sind relevant?</a></li><li><a href="#eine-funktion-in-graphs-eingeben">Eine Funktion in Graphs eingeben</a></li><li><a href="#punkte-auf-dem-graphen-setzen">Punkte auf dem Graphen setzen</a></li><li><a href="#sekante-mit-dem-eingebauten-gerade-oder-streckenwerkzeug-zeichnen">Sekante mit dem eingebauten Gerade- oder Streckenwerkzeug zeichnen</a></li><li><a href="#sekantensteigung-mit-dem-messwerkzeug-bestimmen">Sekantensteigung mit dem Messwerkzeug bestimmen</a></li><li><a href="#sekante-dynamisch-untersuchen">Sekante dynamisch untersuchen</a></li><li><a href="#tangente-mit-dem-eingebauten-tangentenwerkzeug-zeichnen">Tangente mit dem eingebauten Tangentenwerkzeug zeichnen</a></li><li><a href="#tangentensteigung-messen">Tangentensteigung messen</a></li><li><a href="#tangente-dynamisch-untersuchen">Tangente dynamisch untersuchen</a></li><li><a href="#tangentengleichung-anzeigen">Tangentengleichung anzeigen</a></li><li><a href="#tangentengleichung-rechnerisch-kontrollieren">Tangentengleichung rechnerisch kontrollieren</a></li><li><a href="#vergleich-sekante-und-tangente">Vergleich: Sekante und Tangente</a></li><li><a href="#beispiel-1-sekante-bei-fxx2">Beispiel 1: Sekante bei f(x)=x²</a></li><li><a href="#beispiel-2-tangente-bei-fxx2">Beispiel 2: Tangente bei f(x)=x²</a></li><li><a href="#beispiel-3-tangente-an-einer-extremstelle">Beispiel 3: Tangente an einer Extremstelle</a></li><li><a href="#die-werkzeuge-im-unterricht-sinnvoll-nutzen">Die Werkzeuge im Unterricht sinnvoll nutzen</a></li><li><a href="#typische-fehler">Typische Fehler</a></li><li><a href="#didaktischer-bezug-zum-kernlehrplan-nrw">Didaktischer Bezug zum Kernlehrplan NRW</a></li><li><a href="#was-gehort-zu-einer-vollstandigen-losung">Was gehört zu einer vollständigen Lösung?</a></li><li><a href="#checkliste">Checkliste</a></li><li><a href="#kurzzusammenfassung">Kurzzusammenfassung</a></li>
+        <li><a href="#tangenten-mit-dem-ti-nspire">Tangenten mit dem TI-Nspire</a></li>
+        <li><a href="#befehl-und-syntax">Befehl und Syntax</a></li><li><a href="#beispiel">Beispiel</a></li>
     </ul>
 </nav>
 </aside>
             <main id="terminal-mkdocs-main-content">
 <section id="mkdocs-terminal-content">
-    <h1 id="tangenten-und-sekanten-mit-dem-ti-nspire">Tangenten und Sekanten mit dem TI-Nspire</h1>
-<p>Diese Anleitung erklärt, wie du Tangenten und Sekanten mit der TI-Nspire-App untersuchen, zeichnen, messen und rechnerisch kontrollieren kannst. Sie richtet sich an Schülerinnen und Schüler der EF, Q1 und Q2 und orientiert sich an den Anforderungen des Kernlehrplans NRW.</p>
-<p>Tangenten und Sekanten sind zentrale Begriffe der Analysis. Sie helfen dir zu verstehen, was mit durchschnittlicher und momentaner Änderungsrate gemeint ist. Der TI-Nspire bietet dafür nicht nur rechnerische Befehle, sondern auch eigene Werkzeuge in der Graphs- und Geometry-Umgebung.</p>
-<p>!!! Voraussetzung</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>Du solltest bereits wissen, wie man Funktionen im TI-Nspire eingibt, Graphen zeichnet und die Steigung einer Geraden deutet.
-</code></pre></div>
-<h2 id="grundidee-sekante-und-tangente">Grundidee: Sekante und Tangente</h2>
-<p>Eine Sekante ist eine Gerade, die einen Graphen in zwei Punkten schneidet. Sie beschreibt die durchschnittliche Änderung einer Funktion in einem Intervall.</p>
-<p>Eine Tangente ist eine Gerade, die den Graphen in einem bestimmten Punkt berührt und dort dieselbe Steigung wie der Graph hat. Sie beschreibt die momentane Änderung an einer Stelle.</p>
-<p>Der Zusammenhang ist wichtig: Wenn die beiden Punkte einer Sekante immer näher zusammenrücken, nähert sich die Sekante einer Tangente an.</p>
-<h2 id="welche-ti-nspire-werkzeuge-sind-relevant">Welche TI-Nspire-Werkzeuge sind relevant?</h2>
-<p>Für Tangenten und Sekanten sind besonders diese Werkzeuge wichtig:</p>
-<ul>
-<li><strong>Graphs-App</strong></li>
-<li><strong>Geometry-Werkzeuge innerhalb der Graphs-App</strong></li>
-<li><strong>Punkte &amp; Geraden</strong></li>
-<li><strong>Konstruktion</strong></li>
-<li><strong>Messung → Steigung</strong></li>
-<li><strong>Grafische Darstellung eines geometrischen Objekts</strong></li>
-<li>ergänzend: <strong>Calculator-App</strong> für rechnerische Kontrolle</li>
-</ul>
-<p>Die Arbeit sollte möglichst nicht nur rechnerisch erfolgen. Gerade beim Einstieg in die Analysis ist die grafische Darstellung wichtig, weil man den Unterschied zwischen Sekante und Tangente direkt sehen kann.</p>
-<h2 id="eine-funktion-in-graphs-eingeben">Eine Funktion in Graphs eingeben</h2>
-<p>Öffne zuerst eine neue Graphs-Seite.</p>
-<p>Gib zum Beispiel ein:</p>
-<pre><code class="language-text">f1(x) = x^2
-</code></pre>
-<p>Der Graph der Funktion wird angezeigt.</p>
-<p>Falls der interessante Bereich nicht gut sichtbar ist, passe das Fenster an. Für viele einfache Beispiele reicht ein Bereich wie:</p>
-<pre><code class="language-text">xMin = -5
-xMax = 5
-yMin = -5
-yMax = 10
-</code></pre>
-<h2 id="punkte-auf-dem-graphen-setzen">Punkte auf dem Graphen setzen</h2>
-<p>Um Sekanten und Tangenten sauber zu konstruieren, benötigst du Punkte auf dem Graphen.</p>
-<p>Gehe dazu in der Graphs-App zu den Geometry-Werkzeugen.</p>
-<p>Typischer Weg:</p>
-<pre><code class="language-text">Werkzeuge → Geometry → Punkte &amp; Geraden → Punkt auf
-</code></pre>
-<p>Tippe anschließend auf den Graphen. Der Punkt wird auf dem Graphen platziert und bleibt mit dem Graphen verbunden.</p>
-<p>Wenn du den Punkt verschiebst, bewegt er sich entlang des Graphen. Dadurch kannst du dynamisch untersuchen, wie sich Sekanten und Tangenten verändern.</p>
-<p>!!! Hinweis</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>Achte darauf, wirklich einen Punkt auf dem Graphen zu setzen. Wenn der Punkt frei im Koordinatensystem liegt, gehört er nicht automatisch zur Funktion.
-</code></pre></div>
-<h2 id="sekante-mit-dem-eingebauten-gerade-oder-streckenwerkzeug-zeichnen">Sekante mit dem eingebauten Gerade- oder Streckenwerkzeug zeichnen</h2>
-<p>Eine Sekante wird durch zwei Punkte auf dem Graphen festgelegt.</p>
-<h3 id="schritt-fur-schritt">Schritt-für-Schritt</h3>
-<ol>
-<li>Gib in Graphs eine Funktion ein, zum Beispiel:</li>
-</ol>
-<pre><code class="language-text">f1(x) = x^2
-</code></pre>
-<ol>
-<li>
-<p>Setze zwei Punkte auf den Graphen, zum Beispiel ungefähr bei <script type="math/tex">x=1</script> und <script type="math/tex">x=3</script>.</p>
-</li>
-<li>
-<p>Wähle das Werkzeug:</p>
-</li>
-</ol>
-<pre><code class="language-text">Werkzeuge → Geometry → Punkte &amp; Geraden → Gerade
-</code></pre>
-<p>oder:</p>
-<pre><code class="language-text">Werkzeuge → Geometry → Punkte &amp; Geraden → Strecke
-</code></pre>
-<ol>
-<li>Tippe nacheinander auf die beiden Punkte.</li>
-</ol>
-<p>Wenn du das Werkzeug <strong>Gerade</strong> verwendest, wird eine vollständige Sekantengerade durch beide Punkte gezeichnet. Wenn du <strong>Strecke</strong> verwendest, wird nur die Verbindungsstrecke zwischen den Punkten angezeigt. Für das Verständnis der Sekantensteigung reicht die Strecke oft aus; für die Darstellung als Gerade ist das Werkzeug <strong>Gerade</strong> passender.</p>
-<h2 id="sekantensteigung-mit-dem-messwerkzeug-bestimmen">Sekantensteigung mit dem Messwerkzeug bestimmen</h2>
-<p>Nachdem du eine Sekante erstellt hast, kannst du ihre Steigung direkt messen.</p>
-<p>Wähle:</p>
-<pre><code class="language-text">Werkzeuge → Geometry → Messung → Steigung
-</code></pre>
-<p>Tippe anschließend auf die Sekante, also auf die Gerade oder Strecke.</p>
-<p>Der TI-Nspire zeigt die Steigung der Sekante an.</p>
-<p>Diese Steigung entspricht der durchschnittlichen Änderungsrate im Intervall zwischen den beiden x-Werten.</p>
-<p>Mathematisch gilt:</p>
-<p>
-<script type="math/tex; mode=display">
-m_\text{Sekante}=\frac{f(x_2)-f(x_1)}{x_2-x_1}
-</script>
-</p>
-<h3 id="beispiel">Beispiel</h3>
-<p>Für</p>
-<p>
-<script type="math/tex; mode=display">
-f(x)=x^2
-</script>
-</p>
-<p>und die Punkte <script type="math/tex">x_1=1</script>, <script type="math/tex">x_2=3</script> gilt:</p>
-<p>
-<script type="math/tex; mode=display">
-m=\frac{f(3)-f(1)}{3-1}
-</script>
-</p>
-<p>
-<script type="math/tex; mode=display">
-m=\frac{9-1}{2}=4
-</script>
-</p>
-<p>Wenn du die Sekante im TI-Nspire zeichnest und die Steigung misst, sollte ebenfalls der Wert 4 erscheinen.</p>
-<h2 id="sekante-dynamisch-untersuchen">Sekante dynamisch untersuchen</h2>
-<p>Ein großer Vorteil der App ist, dass du Punkte verschieben kannst.</p>
-<p>Wenn du einen der beiden Punkte auf dem Graphen verschiebst, verändert sich die Sekante. Die gemessene Steigung wird automatisch angepasst.</p>
-<p>Dadurch kannst du untersuchen:</p>
-<ul>
-<li>wann die Sekantensteigung positiv ist,</li>
-<li>wann sie negativ ist,</li>
-<li>wann sie nahe bei 0 liegt,</li>
-<li>wie sie sich verändert, wenn die Punkte näher zusammenrücken.</li>
-</ul>
-<p>Das ist besonders wichtig für das Verständnis der Ableitung.</p>
-<p>!!! Aufgabe</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>Setze zwei Punkte auf den Graphen von \(f(x)=x^2\). Miss die Sekantensteigung. Verschiebe dann einen Punkt immer näher an den anderen Punkt heran. Beschreibe, was mit der Sekantensteigung passiert.
-</code></pre></div>
-<h2 id="tangente-mit-dem-eingebauten-tangentenwerkzeug-zeichnen">Tangente mit dem eingebauten Tangentenwerkzeug zeichnen</h2>
-<p>Für Tangenten besitzt die TI-Nspire-App ein eigenes Werkzeug.</p>
-<p>Typischer Weg in der Graphs-App:</p>
-<pre><code class="language-text">Werkzeuge → Geometry → Konstruktion → Tangente
-</code></pre>
-<p>Je nach Spracheinstellung oder App-Version kann das Werkzeug leicht anders benannt sein. Suche im Geometry-Menü nach <strong>Tangente</strong>.</p>
-<h3 id="schritt-fur-schritt_1">Schritt-für-Schritt</h3>
-<ol>
-<li>
-<p>Öffne eine Graphs-Seite.</p>
-</li>
-<li>
-<p>Gib eine Funktion ein:</p>
-</li>
-</ol>
-<pre><code class="language-text">f1(x) = x^2
-</code></pre>
-<ol>
-<li>Setze einen Punkt auf den Graphen:</li>
-</ol>
-<pre><code class="language-text">Werkzeuge → Geometry → Punkte &amp; Geraden → Punkt auf
-</code></pre>
-<ol>
-<li>Wähle das Tangentenwerkzeug:</li>
-</ol>
-<pre><code class="language-text">Werkzeuge → Geometry → Konstruktion → Tangente
-</code></pre>
-<ol>
-<li>Tippe auf den Punkt auf dem Graphen und auf den Graphen selbst, falls die App beide Objekte abfragt.</li>
-</ol>
-<p>Der TI-Nspire zeichnet nun die Tangente an den Graphen in diesem Punkt.</p>
-<p>!!! Hinweis</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>Falls die Tangente nicht erscheint, prüfe, ob der Punkt wirklich auf dem Graphen liegt. Ein frei gesetzter Punkt reicht nicht immer aus.
-</code></pre></div>
-<h2 id="tangentensteigung-messen">Tangentensteigung messen</h2>
-<p>Auch die Steigung einer Tangente kannst du direkt messen.</p>
-<p>Wähle:</p>
-<pre><code class="language-text">Werkzeuge → Geometry → Messung → Steigung
-</code></pre>
-<p>Tippe anschließend auf die Tangente.</p>
-<p>Der angezeigte Wert ist die momentane Änderungsrate der Funktion an der gewählten Stelle.</p>
-<p>Mathematisch entspricht dieser Wert der Ableitung:</p>
-<p>
-<script type="math/tex; mode=display">
-m_\text{Tangente}=f'(a)
-</script>
-</p>
-<p>wenn die Tangente an der Stelle <script type="math/tex">x=a</script> liegt.</p>
-<h2 id="tangente-dynamisch-untersuchen">Tangente dynamisch untersuchen</h2>
-<p>Wenn der Berührpunkt auf dem Graphen verschoben wird, bewegt sich die Tangente mit. Die gemessene Steigung verändert sich automatisch.</p>
-<p>So kannst du beobachten:</p>
-<ul>
-<li>an welchen Stellen die Tangente steigt,</li>
-<li>an welchen Stellen die Tangente fällt,</li>
-<li>an welchen Stellen die Tangente waagerecht ist,</li>
-<li>wie Tangentensteigung und Ableitung zusammenhängen.</li>
-</ul>
-<p>Eine waagerechte Tangente hat die Steigung 0. Solche Stellen sind besonders wichtig, weil dort häufig Hoch- oder Tiefpunkte liegen.</p>
-<h2 id="tangentengleichung-anzeigen">Tangentengleichung anzeigen</h2>
-<p>Der TI-Nspire kann bei geeigneten geometrischen Objekten auch eine Gleichung anzeigen. Das ist besonders nützlich, wenn du die Tangentengleichung benötigst.</p>
-<p>Typisches Vorgehen:</p>
-<ol>
-<li>Zeichne die Tangente mit dem Tangentenwerkzeug.</li>
-<li>Tippe die Tangente an.</li>
-<li>Öffne das Kontextmenü oder die Objektoptionen.</li>
-<li>Wähle die Option zur Anzeige der Gleichung.</li>
-</ol>
-<p>Die App zeigt dann eine Geradengleichung der Tangente an.</p>
-<p>Diese Gleichung kann zum Beispiel die Form haben:</p>
-<pre><code class="language-text">y = 4x - 4
-</code></pre>
-<p>Für den Graphen <script type="math/tex">f(x)=x^2</script> an der Stelle <script type="math/tex">x=2</script> ist das die Tangente:</p>
-<p>
-<script type="math/tex; mode=display">
-t(x)=4x-4
-</script>
-</p>
-<h2 id="tangentengleichung-rechnerisch-kontrollieren">Tangentengleichung rechnerisch kontrollieren</h2>
-<p>Die grafische Tangente kann mit der Ableitung kontrolliert werden.</p>
-<p>Gegeben:</p>
-<p>
-<script type="math/tex; mode=display">
-f(x)=x^2
-</script>
-</p>
-<p>Tangente bei:</p>
-<p>
-<script type="math/tex; mode=display">
-x=2
-</script>
-</p>
-<p>Die Tangentensteigung berechnest du im Calculator mit:</p>
-<pre><code class="language-text">d(f(x), x) | x = 2
-</code></pre>
-<p>oder direkt:</p>
-<pre><code class="language-text">d(x^2, x) | x = 2
-</code></pre>
-<p>Ergebnis:</p>
-<pre><code class="language-text">4
-</code></pre>
-<p>Der Berührpunkt ist:</p>
-<pre><code class="language-text">f(2)
-</code></pre>
-<p>Ergebnis:</p>
-<pre><code class="language-text">4
-</code></pre>
-<p>Damit lautet die Tangente:</p>
-<p>
-<script type="math/tex; mode=display">
-t(x)=4(x-2)+4
-</script>
-</p>
-<p>Vereinfacht:</p>
-<p>
-<script type="math/tex; mode=display">
-t(x)=4x-4
-</script>
-</p>
-<p>Das sollte mit der angezeigten Gleichung der Tangente übereinstimmen.</p>
-<h2 id="vergleich-sekante-und-tangente">Vergleich: Sekante und Tangente</h2>
-<p>Die Sekante verwendet zwei Punkte:</p>
-<p>
-<script type="math/tex; mode=display">
-m_\text{Sekante}=\frac{f(x_2)-f(x_1)}{x_2-x_1}
-</script>
-</p>
-<p>Die Tangente verwendet einen Punkt und die Ableitung:</p>
-<p>
-<script type="math/tex; mode=display">
-m_\text{Tangente}=f'(a)
-</script>
-</p>
-<p>Inhaltlich bedeutet das:</p>
-<p>Sekante:</p>
-<pre><code class="language-text">durchschnittliche Änderungsrate
-</code></pre>
-<p>Tangente:</p>
-<pre><code class="language-text">momentane Änderungsrate
-</code></pre>
-<p>Der TI-Nspire hilft dabei, diesen Übergang sichtbar zu machen. Wenn du bei einer Sekante die beiden Punkte immer näher zusammenbringst, nähert sich die Sekante der Tangente an.</p>
-<h2 id="beispiel-1-sekante-bei-fxx2">Beispiel 1: Sekante bei f(x)=x²</h2>
-<p>Gegeben:</p>
-<p>
-<script type="math/tex; mode=display">
-f(x)=x^2
-</script>
-</p>
-<p>Untersuche die Sekante zwischen <script type="math/tex">x=1</script> und <script type="math/tex">x=3</script>.</p>
-<h3 id="mit-den-werkzeugen">Mit den Werkzeugen</h3>
-<ol>
-<li>Gib ein:</li>
-</ol>
-<pre><code class="language-text">f1(x)=x^2
-</code></pre>
-<ol>
-<li>Setze Punkte auf den Graphen bei <script type="math/tex">x=1</script> und <script type="math/tex">x=3</script>.</li>
-<li>Zeichne eine Gerade durch die beiden Punkte.</li>
-<li>Miss die Steigung der Geraden.</li>
-</ol>
-<p>Ergebnis:</p>
-<pre><code class="language-text">m = 4
-</code></pre>
-<h3 id="rechnerische-kontrolle">Rechnerische Kontrolle</h3>
-<pre><code class="language-text">(f(3)-f(1))/(3-1)
-</code></pre>
-<p>Ergebnis:</p>
-<pre><code class="language-text">4
-</code></pre>
-<h2 id="beispiel-2-tangente-bei-fxx2">Beispiel 2: Tangente bei f(x)=x²</h2>
-<p>Gegeben:</p>
-<p>
-<script type="math/tex; mode=display">
-f(x)=x^2
-</script>
-</p>
-<p>Untersuche die Tangente bei <script type="math/tex">x=2</script>.</p>
-<h3 id="mit-den-werkzeugen_1">Mit den Werkzeugen</h3>
-<ol>
-<li>Gib ein:</li>
-</ol>
-<pre><code class="language-text">f1(x)=x^2
-</code></pre>
-<ol>
-<li>Setze einen Punkt auf den Graphen bei <script type="math/tex">x=2</script>.</li>
-<li>Wähle:</li>
-</ol>
-<pre><code class="language-text">Werkzeuge → Geometry → Konstruktion → Tangente
-</code></pre>
-<ol>
-<li>Erzeuge die Tangente im Punkt.</li>
-<li>Miss die Steigung der Tangente.</li>
-</ol>
-<p>Ergebnis:</p>
-<pre><code class="language-text">m = 4
-</code></pre>
-<h3 id="rechnerische-kontrolle_1">Rechnerische Kontrolle</h3>
-<pre><code class="language-text">d(x^2, x) | x = 2
-</code></pre>
-<p>Ergebnis:</p>
-<pre><code class="language-text">4
-</code></pre>
-<p>Die Tangentengleichung lautet:</p>
-<p>
-<script type="math/tex; mode=display">
-t(x)=4x-4
-</script>
-</p>
-<h2 id="beispiel-3-tangente-an-einer-extremstelle">Beispiel 3: Tangente an einer Extremstelle</h2>
-<p>Gegeben:</p>
-<p>
-<script type="math/tex; mode=display">
-f(x)=x^2-4x+5
-</script>
-</p>
-<p>Diese Funktion besitzt einen Tiefpunkt bei <script type="math/tex">x=2</script>.</p>
-<p>Wenn du mit dem Tangentenwerkzeug die Tangente bei <script type="math/tex">x=2</script> zeichnest und die Steigung misst, erhältst du:</p>
-<pre><code class="language-text">m = 0
-</code></pre>
-<p>Die Tangente ist waagerecht.</p>
-<p>Das passt zur Ableitung:</p>
-<pre><code class="language-text">d(x^2 - 4x + 5, x) | x = 2
-</code></pre>
-<p>Ergebnis:</p>
-<pre><code class="language-text">0
-</code></pre>
-<p>Interpretation:</p>
-<p>An einer Extremstelle ist die Tangente häufig waagerecht. Deshalb sucht man in der Analysis Extremstellen oft über die Gleichung:</p>
-<p>
-<script type="math/tex; mode=display">
-f'(x)=0
-</script>
-</p>
-<h2 id="die-werkzeuge-im-unterricht-sinnvoll-nutzen">Die Werkzeuge im Unterricht sinnvoll nutzen</h2>
-<p>Für den Unterricht ist es sinnvoll, die eingebauten Werkzeuge nicht nur als Rechenhilfe zu verwenden, sondern als Mittel zum Verstehen.</p>
-<p>Eine sinnvolle Reihenfolge ist:</p>
-<ol>
-<li>Funktion zeichnen.</li>
-<li>Zwei Punkte setzen.</li>
-<li>Sekante zeichnen.</li>
-<li>Sekantensteigung messen.</li>
-<li>Punkte näher zusammenführen.</li>
-<li>Tangente zeichnen.</li>
-<li>Tangentensteigung messen.</li>
-<li>Zusammenhang zur Ableitung herstellen.</li>
-<li>Ergebnis rechnerisch kontrollieren.</li>
-</ol>
-<p>So wird sichtbar, warum die Ableitung als Grenzwert von Sekantensteigungen verstanden werden kann.</p>
-<h2 id="typische-fehler">Typische Fehler</h2>
-<p>Ein häufiger Fehler besteht darin, Punkte nicht auf den Graphen zu setzen. Dann ist die Sekante oder Tangente nicht an die Funktion gebunden und verändert sich nicht sinnvoll mit dem Graphen.</p>
-<p>Ein weiterer Fehler ist das Verwechseln der Werkzeuge <strong>Gerade</strong>, <strong>Strecke</strong> und <strong>Tangente</strong>. Eine Sekante wird durch zwei Punkte auf dem Graphen bestimmt. Eine Tangente wird an einem Punkt des Graphen konstruiert.</p>
-<p>Auch die Steigungsmessung wird manchmal falsch angewendet. Du musst bei <strong>Messung → Steigung</strong> die Gerade, Strecke oder Tangente antippen, nicht den Punkt.</p>
-<h2 id="didaktischer-bezug-zum-kernlehrplan-nrw">Didaktischer Bezug zum Kernlehrplan NRW</h2>
-<p>In der EF steht besonders die mittlere Änderungsrate im Mittelpunkt. Die Sekante ist dafür eine anschauliche Darstellung.</p>
-<p>In der Q1 wird daraus die momentane Änderungsrate entwickelt. Die Tangente ist die geometrische Darstellung der Ableitung an einer Stelle.</p>
-<p>In der Q2 werden Tangenten, Ableitungen und Änderungsraten in komplexeren Funktionsuntersuchungen und Sachkontexten verwendet.</p>
-<p>Der TI-Nspire unterstützt dabei besonders den Darstellungswechsel zwischen Graph, Messwert, Term und Interpretation.</p>
-<h2 id="was-gehort-zu-einer-vollstandigen-losung">Was gehört zu einer vollständigen Lösung?</h2>
-<p>Eine vollständige Lösung sollte nicht nur einen Messwert nennen.</p>
-<p>Unvollständig wäre:</p>
-<pre><code class="language-text">m = 4
-</code></pre>
-<p>Besser ist:</p>
-<pre><code class="language-text">Die Sekantensteigung zwischen x=1 und x=3 beträgt 4. Das bedeutet, dass die Funktion in diesem Intervall durchschnittlich um 4 Einheiten pro x-Einheit steigt.
-</code></pre>
-<p>Oder bei einer Tangente:</p>
-<pre><code class="language-text">Die Tangentensteigung bei x=2 beträgt 4. Das bedeutet, dass die momentane Änderungsrate der Funktion an dieser Stelle 4 beträgt.
-</code></pre>
-<h2 id="checkliste">Checkliste</h2>
-<p>Prüfe vor dem Aufschreiben:</p>
-<ul>
-<li>Habe ich die Funktion korrekt eingegeben?</li>
-<li>Liegen die Punkte wirklich auf dem Graphen?</li>
-<li>Habe ich für eine Sekante zwei Punkte verwendet?</li>
-<li>Habe ich für eine Tangente das Tangentenwerkzeug benutzt?</li>
-<li>Habe ich die Steigung der Geraden gemessen und nicht versehentlich einen Punkt ausgewählt?</li>
-<li>Habe ich das Ergebnis rechnerisch kontrolliert?</li>
-<li>Habe ich erklärt, ob es sich um eine durchschnittliche oder momentane Änderungsrate handelt?</li>
-</ul>
-<h2 id="kurzzusammenfassung">Kurzzusammenfassung</h2>
-<p>Eine Sekante ist eine Gerade durch zwei Punkte eines Graphen. Sie beschreibt eine durchschnittliche Änderungsrate.</p>
-<p>Im TI-Nspire:</p>
-<pre><code class="language-text">Werkzeuge → Geometry → Punkte &amp; Geraden → Gerade
-</code></pre>
-<p>und anschließend:</p>
-<pre><code class="language-text">Werkzeuge → Geometry → Messung → Steigung
-</code></pre>
-<p>Eine Tangente berührt den Graphen in einem Punkt und beschreibt dort die momentane Änderungsrate.</p>
-<p>Im TI-Nspire:</p>
-<pre><code class="language-text">Werkzeuge → Geometry → Konstruktion → Tangente
-</code></pre>
-<p>und anschließend:</p>
-<pre><code class="language-text">Werkzeuge → Geometry → Messung → Steigung
-</code></pre>
-<p>Rechnerisch gilt:</p>
-<pre><code class="language-text">Sekante: (f(x2)-f(x1))/(x2-x1)
-Tangente: d(f(x), x) | x = a
-</code></pre>
-<p>Der TI-Nspire hilft dir, die Verbindung zwischen Sekante, Tangente und Ableitung sichtbar zu machen.</p>
+    <h1 id="tangenten-mit-dem-ti-nspire">Tangenten mit dem TI-Nspire</h1>
+<p>Eine Tangente ist eine Gerade, die den Graphen in einem bestimmten Punkt berührt und dort dieselbe Steigung wie der Graph hat. Sie beschreibt die momentane Änderung an einer Stelle des Graphen.</p>
+<h2 id="befehl-und-syntax">Befehl und Syntax</h2>
+<p>Um eine Tangentengleichung aufzustellen kennst du ein rechnerisches Verfahren, jedoch kann das CAS mit einem einfach Befehl die Tangente an einem Punkt angeben. Dieser Befehl lautet <code>tagnentLine</code></p>
+<p>Diesen Befehl findet man unter </p>
+<p><code>Menü -&gt; Mathematische Operatoren -&gt; Analysis</code></p>
+<p>Die Syntax des Befehls lautet  </p>
+<p><code>tangentLine(Funktion, Variable, Wert</code></p>
+<p>Alternativ kann man auch  <code>tangentLine(Funktion, Variable = Wert</code> verwenden. Man beachte, dass man nur den x-Wert kennen muss um die Tangenten anzulegen.</p>
+<h2 id="beispiel">Beispiel</h2>
+<p>Wir betrachten die Funktion <script type="math/tex">f(x) = x^2</script> und wollen eine Tangente an den Punkt <script type="math/tex">Q(2|4)</script> legen. </p>
+<p><img src="..\..\img\tangente1.png" alt="Tangente"/></p>
+<p>Möchte man mit der Tangentengleichung weiterrechnen, bietet es sich an, dass man diese mit Hilfe des Befehls <code>tangentLine</code>definiert. Das funktioniert genauso, wie bei der Ableitungsfunktion oder bei dem Definieren von Funktionen:</p>
+<p><img src="..\..\img\tangente2.png" alt="Tangente"/></p>
 </section>
 
             </main>
