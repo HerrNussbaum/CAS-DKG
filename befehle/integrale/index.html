@@ -19,7 +19,7 @@
 
     
  
-<title>Integrale und Stammfunktionen mit dem TI-Nspire - CAS/MMS am DKG</title>
+<title>Integrale und Stammfunktionen - CAS/MMS am DKG</title>
 
 
 <link href="../../css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
@@ -147,15 +147,11 @@
             
     
         
-        
-            
-            
-            <span class="
+        <span class="
         
             
         
-    terminal-mkdocs-side-nav-item terminal-mkdocs-side-nav-section-no-index">Befehle</span>
-        
+    terminal-mkdocs-side-nav-item--active terminal-mkdocs-side-nav-section-no-index">Befehle</span>
     
     
         
@@ -241,6 +237,20 @@
     
     </li>
             
+        
+            
+            
+                
+                
+            
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <span class="terminal-mkdocs-side-nav-item--active">Integrale und Stammfunktionen</span>
+    
+    </li>
+            
             
     </ul>
         
@@ -251,20 +261,16 @@
 </nav><hr>
 <nav>
     <ul>
-        <li><a href="#integrale-und-stammfunktionen-mit-dem-ti-nspire">Integrale und Stammfunktionen mit dem TI-Nspire</a></li>
-        <li><a href="#grundidee-was-ist-eine-stammfunktion">Grundidee: Was ist eine Stammfunktion?</a></li><li><a href="#unbestimmtes-integral-im-ti-nspire">Unbestimmtes Integral im TI-Nspire</a></li><li><a href="#funktion-zuerst-definieren">Funktion zuerst definieren</a></li><li><a href="#stammfunktion-kontrollieren">Stammfunktion kontrollieren</a></li><li><a href="#grundidee-was-ist-ein-bestimmtes-integral">Grundidee: Was ist ein bestimmtes Integral?</a></li><li><a href="#bestimmtes-integral-im-ti-nspire-berechnen">Bestimmtes Integral im TI-Nspire berechnen</a></li><li><a href="#bestimmtes-integral-mit-definierter-funktion">Bestimmtes Integral mit definierter Funktion</a></li><li><a href="#zusammenhang-zwischen-stammfunktion-und-bestimmtem-integral">Zusammenhang zwischen Stammfunktion und bestimmtem Integral</a></li><li><a href="#integralzeichen-einfugen">Integralzeichen einfügen</a></li><li><a href="#integrale-in-der-graphs-app-darstellen">Integrale in der Graphs-App darstellen</a></li><li><a href="#orientierte-flache-und-geometrischer-flacheninhalt">Orientierte Fläche und geometrischer Flächeninhalt</a></li><li><a href="#flachen-zwischen-graph-und-x-achse">Flächen zwischen Graph und x-Achse</a></li><li><a href="#flache-zwischen-zwei-graphen">Fläche zwischen zwei Graphen</a></li><li><a href="#beispiel-flache-zwischen-zwei-funktionen">Beispiel: Fläche zwischen zwei Funktionen</a></li><li><a href="#anwendung-bestand-aus-anderungsrate">Anwendung: Bestand aus Änderungsrate</a></li><li><a href="#typische-eingaben">Typische Eingaben</a></li><li><a href="#typische-fehler">Typische Fehler</a></li><li><a href="#didaktischer-bezug-zum-kernlehrplan-nrw">Didaktischer Bezug zum Kernlehrplan NRW</a></li><li><a href="#was-gehort-zu-einer-vollstandigen-losung">Was gehört zu einer vollständigen Lösung?</a></li><li><a href="#checkliste">Checkliste</a></li><li><a href="#kurzzusammenfassung">Kurzzusammenfassung</a></li>
+        <li><a href="#integrale-und-stammfunktionen">Integrale und Stammfunktionen</a></li>
+        <li><a href="#was-ist-eine-stammfunktion">Was ist eine Stammfunktion?</a></li><li><a href="#unbestimmtes-integral">Unbestimmtes Integral</a></li><li><a href="#bestimmtes-integral">Bestimmtes Integral</a></li><li><a href="#bestimmtes-integral-berechnen">Bestimmtes Integral berechnen</a></li><li><a href="#bestimmtes-integral-mit-definierter-funktion">Bestimmtes Integral mit definierter Funktion</a></li><li><a href="#checkliste">Checkliste</a></li>
     </ul>
 </nav>
 </aside>
             <main id="terminal-mkdocs-main-content">
 <section id="mkdocs-terminal-content">
-    <h1 id="integrale-und-stammfunktionen-mit-dem-ti-nspire">Integrale und Stammfunktionen mit dem TI-Nspire</h1>
-<p>Diese Anleitung erklärt, wie du mit dem TI-Nspire Integrale berechnest, Stammfunktionen bestimmst und die Ergebnisse sinnvoll deutest. Sie richtet sich an Schülerinnen und Schüler der EF, Q1 und Q2 und orientiert sich an den Anforderungen des Kernlehrplans NRW.</p>
-<p>Integrale gehören zu den zentralen Werkzeugen der Analysis. Während die Ableitung Änderungsraten und Steigungen beschreibt, werden Integrale häufig verwendet, um Bestände, Flächeninhalte, Gesamtänderungen oder aufsummierte Größen zu bestimmen. Der TI-Nspire kann dich dabei rechnerisch und grafisch unterstützen.</p>
-<p>!!! Voraussetzung</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>Du solltest bereits wissen, wie man Funktionen im TI-Nspire definiert, wie man Funktionswerte berechnet und wie man Graphen zeichnet. Für die Q1 und Q2 solltest du außerdem die Begriffe Ableitung, Stammfunktion und bestimmtes Integral kennen.
-</code></pre></div>
-<h2 id="grundidee-was-ist-eine-stammfunktion">Grundidee: Was ist eine Stammfunktion?</h2>
+    <h1 id="integrale-und-stammfunktionen">Integrale und Stammfunktionen</h1>
+<p>Integrale gehören zu den zentralen Werkzeugen der Analysis. Während die Ableitung Änderungsraten und Steigungen beschreibt, werden Integrale häufig verwendet, um Bestände, Flächeninhalte, Gesamtänderungen oder aufsummierte Größen zu bestimmen. Das CAS kann Integrale und Stammfunktionen sehr leicht berechnen.</p>
+<h2 id="was-ist-eine-stammfunktion">Was ist eine Stammfunktion?</h2>
 <p>Eine Stammfunktion ist eine Funktion, deren Ableitung wieder die ursprüngliche Funktion ergibt.</p>
 <p>Wenn gilt:</p>
 <p>
@@ -311,78 +317,28 @@ F'(x)=2x
 </script>
 </p>
 <p>Das <script type="math/tex">C</script> steht für eine beliebige Konstante.</p>
-<h2 id="unbestimmtes-integral-im-ti-nspire">Unbestimmtes Integral im TI-Nspire</h2>
+<h2 id="unbestimmtes-integral">Unbestimmtes Integral</h2>
 <p>Ein unbestimmtes Integral liefert eine Stammfunktion.</p>
 <p>Die allgemeine Eingabe lautet:</p>
-<pre><code class="language-text">∫(Funktion, Variable)
-</code></pre>
-<p>oder mithilfe der Integralvorlage:</p>
-<pre><code class="language-text">∫ f(x) dx
-</code></pre>
-<h3 id="beispiel">Beispiel</h3>
-<p>Gegeben ist:</p>
 <p>
-<script type="math/tex; mode=display">
-f(x)=2x
-</script>
+<script type="math/tex; mode=display">∫Funktion  \quad d \quad Variable</script>
 </p>
-<p>Im TI-Nspire kannst du eingeben:</p>
-<pre><code class="language-text">∫(2x, x)
-</code></pre>
-<p>Der TI-Nspire liefert als Ergebnis:</p>
-<pre><code class="language-text">x^2
-</code></pre>
+<p>Das Integralzeichen (inkusive Platzhalter um die Funktion und die Variable einzufügen) findet man unter 
+<code>Menü -&gt; Mathematische Operatoren -&gt; Analysis -&gt; Integral</code></p>
+<p>Alternativ kann man dies auch einfach über die Tastatur der App einfügen:</p>
+<p><img src="..\..\img\integral1.png" alt="Integral"/></p>
+<p>Hierzu schauen wir uns beispielsweise die Funktion <script type="math/tex">f(x) = x^2 </script> an</p>
+<p><img src="..\..\img\integral2.png" alt="Integral"/></p>
+<p><img src="..\..\img\integral3.png" alt="Integral"/></p>
 <p>Je nach Einstellung und Version wird die Integrationskonstante <script type="math/tex">C</script> nicht automatisch ergänzt. Mathematisch musst du sie beim unbestimmten Integral aber mitdenken.</p>
 <p>Vollständig lautet die Stammfunktion also:</p>
 <p>
 <script type="math/tex; mode=display">
-F(x)=x^2+C
+F(x)=\frac{1}{3}x^3+C
 </script>
 </p>
-<p>!!! Achtung</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>Der TI-Nspire zeigt bei unbestimmten Integralen häufig nur eine Stammfunktion an. In der Mathematik gehört beim unbestimmten Integral immer die Konstante \(C\) dazu.
-</code></pre></div>
-<h2 id="funktion-zuerst-definieren">Funktion zuerst definieren</h2>
-<p>Es ist oft übersichtlicher, die Funktion zunächst zu definieren.</p>
-<p>Beispiel:</p>
-<pre><code class="language-text">f(x) := 3x^2 - 4x + 1
-</code></pre>
-<p>Dann kannst du die Stammfunktion berechnen:</p>
-<pre><code class="language-text">∫(f(x), x)
-</code></pre>
-<p>Der TI-Nspire gibt eine Stammfunktion aus.</p>
-<p>Für das Beispiel erhält man:</p>
-<p>
-<script type="math/tex; mode=display">
-F(x)=x^3-2x^2+x
-</script>
-</p>
-<p>Mit Konstante:</p>
-<p>
-<script type="math/tex; mode=display">
-F(x)=x^3-2x^2+x+C
-</script>
-</p>
-<h2 id="stammfunktion-kontrollieren">Stammfunktion kontrollieren</h2>
-<p>Eine Stammfunktion kannst du kontrollieren, indem du sie wieder ableitest.</p>
-<p>Wenn der TI-Nspire für <script type="math/tex">f(x)=3x^2-4x+1</script> die Stammfunktion</p>
-<p>
-<script type="math/tex; mode=display">
-F(x)=x^3-2x^2+x
-</script>
-</p>
-<p>liefert, kannst du prüfen:</p>
-<pre><code class="language-text">d(x^3 - 2x^2 + x, x)
-</code></pre>
-<p>Ergebnis:</p>
-<pre><code class="language-text">3x^2 - 4x + 1
-</code></pre>
-<p>Damit ist bestätigt, dass die gefundene Funktion eine Stammfunktion ist.</p>
-<p>!!! Hinweis</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>Eine Stammfunktion überprüft man durch Ableiten.
-</code></pre></div>
-<h2 id="grundidee-was-ist-ein-bestimmtes-integral">Grundidee: Was ist ein bestimmtes Integral?</h2>
-<p>Ein bestimmtes Integral beschreibt die orientierte Fläche zwischen dem Graphen einer Funktion und der x-Achse in einem festgelegten Intervall.</p>
+<h2 id="bestimmtes-integral">Bestimmtes Integral</h2>
+<p>Ein bestimmtes Integral beschreibt die orientierte Fläche zwischen dem Graphen einer Funktion und der x-Achse in einem festgelegten Intervall <script type="math/tex">[a;b]</script>.</p>
 <p>Man schreibt:</p>
 <p>
 <script type="math/tex; mode=display">
@@ -401,258 +357,30 @@ F(x)=x^3-2x^2+x
 <script type="math/tex">dx</script> die Integrationsvariable</li>
 </ul>
 <p>Liegt der Graph oberhalb der x-Achse, zählt die Fläche positiv. Liegt der Graph unterhalb der x-Achse, zählt die Fläche negativ.</p>
-<h2 id="bestimmtes-integral-im-ti-nspire-berechnen">Bestimmtes Integral im TI-Nspire berechnen</h2>
+<p>Das Integralzeichen (inkusive Platzhalter um die Grenzen, die Funktion und die Variable einzufügen) findet man unter 
+<code>Menü -&gt; Mathematische Operatoren -&gt; Analysis -&gt; Integral</code></p>
+<p>Alternativ kann man dies auch einfach über die Tastatur der App einfügen:</p>
+<p><img src="..\..\img\integral1.png" alt="Integral"/></p>
+<h2 id="bestimmtes-integral-berechnen">Bestimmtes Integral berechnen</h2>
 <p>Die allgemeine Eingabe lautet:</p>
-<pre><code class="language-text">∫(Funktion, Variable, untere Grenze, obere Grenze)
-</code></pre>
-<h3 id="beispiel_1">Beispiel</h3>
-<p>Gegeben ist:</p>
 <p>
 <script type="math/tex; mode=display">
-f(x)=x^2
+\int_{untere Grenze}^{obere Grenze} Funktion \quad \,d \quad Variable
 </script>
 </p>
-<p>Gesucht ist:</p>
+<p>Wir schauen uns wieder als Beispiel <script type="math/tex">f(x)=x^2</script> an. Gesucht ist:</p>
 <p>
 <script type="math/tex; mode=display">
 \int_0^3 x^2\,dx
 </script>
 </p>
-<p>Im TI-Nspire gibst du ein:</p>
-<pre><code class="language-text">∫(x^2, x, 0, 3)
-</code></pre>
-<p>Ergebnis:</p>
-<pre><code class="language-text">9
-</code></pre>
+<p>Dies kann man einfach mit dem CAS bestimmen:</p>
+<p><img src="..\..\img\integral4.png" alt="Integral"/></p>
 <p>Das bedeutet: Die orientierte Fläche zwischen dem Graphen von <script type="math/tex">f(x)=x^2</script> und der x-Achse im Intervall <script type="math/tex">[0;3]</script> beträgt 9 Flächeneinheiten.</p>
 <h2 id="bestimmtes-integral-mit-definierter-funktion">Bestimmtes Integral mit definierter Funktion</h2>
-<p>Auch hier ist es oft sinnvoll, die Funktion zuerst zu definieren:</p>
-<pre><code class="language-text">f(x) := x^2
-</code></pre>
-<p>Dann berechnest du:</p>
-<pre><code class="language-text">∫(f(x), x, 0, 3)
-</code></pre>
-<p>Das Ergebnis ist wieder:</p>
-<pre><code class="language-text">9
-</code></pre>
+<p>Auch bei Integralen ist es oft sinnvoll, die Funktion zuerst zu definieren:</p>
+<p><img src="..\..\img\integral5.png" alt="Integral"/></p>
 <p>Diese Schreibweise ist übersichtlicher, wenn du dieselbe Funktion mehrfach verwenden möchtest.</p>
-<h2 id="zusammenhang-zwischen-stammfunktion-und-bestimmtem-integral">Zusammenhang zwischen Stammfunktion und bestimmtem Integral</h2>
-<p>Wenn <script type="math/tex">F</script> eine Stammfunktion von <script type="math/tex">f</script> ist, dann gilt:</p>
-<p>
-<script type="math/tex; mode=display">
-\int_a^b f(x)\,dx = F(b)-F(a)
-</script>
-</p>
-<p>Das nennt man den Hauptsatz der Differential- und Integralrechnung.</p>
-<p>Beispiel:</p>
-<p>
-<script type="math/tex; mode=display">
-f(x)=x^2
-</script>
-</p>
-<p>Eine Stammfunktion ist:</p>
-<p>
-<script type="math/tex; mode=display">
-F(x)=\frac{1}{3}x^3
-</script>
-</p>
-<p>Dann gilt:</p>
-<p>
-<script type="math/tex; mode=display">
-\int_0^3 x^2\,dx = F(3)-F(0)
-</script>
-</p>
-<p>
-<script type="math/tex; mode=display">
-= \frac{1}{3}\cdot 3^3 - \frac{1}{3}\cdot 0^3
-</script>
-</p>
-<p>
-<script type="math/tex; mode=display">
-=9
-</script>
-</p>
-<p>Das passt zum TI-Nspire-Ergebnis.</p>
-<h2 id="integralzeichen-einfugen">Integralzeichen einfügen</h2>
-<p>Das Integralzeichen findest du in der TI-Nspire-App über die mathematischen Vorlagen oder über den Katalog.</p>
-<p>Typischer Weg:</p>
-<ol>
-<li>Öffne eine Calculator-Seite.</li>
-<li>Tippe in die Eingabezeile.</li>
-<li>Öffne die TI-Nspire-Tastatur.</li>
-<li>Wähle die Integralvorlage oder suche im Katalog nach dem Integralbefehl.</li>
-<li>Trage Funktion, Variable und gegebenenfalls Grenzen ein.</li>
-<li>Bestätige mit Enter.</li>
-</ol>
-<p>Achte darauf, dass alle Felder der Vorlage korrekt ausgefüllt werden. Besonders häufig werden die Integrationsvariable oder eine Grenze vergessen.</p>
-<h2 id="integrale-in-der-graphs-app-darstellen">Integrale in der Graphs-App darstellen</h2>
-<p>Integrale können nicht nur rechnerisch, sondern auch grafisch untersucht werden. Das ist besonders hilfreich, wenn du verstehen möchtest, welche Fläche berechnet wird.</p>
-<p>Typisches Vorgehen:</p>
-<ol>
-<li>Öffne eine Graphs-Seite.</li>
-<li>Gib die Funktion ein, zum Beispiel:</li>
-</ol>
-<pre><code class="language-text">f1(x) = x^2
-</code></pre>
-<ol>
-<li>Öffne das Analyse-Menü.</li>
-<li>Wähle das Werkzeug zum Berechnen eines Integrals beziehungsweise einer Fläche.</li>
-<li>Gib die Grenzen des Intervalls an oder wähle sie am Graphen aus.</li>
-</ol>
-<p>Der TI-Nspire markiert dann den entsprechenden Bereich und berechnet den Integralwert.</p>
-<p>!!! Hinweis</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>Die grafische Darstellung hilft beim Verstehen. Für eine vollständige Lösung solltest du aber zusätzlich den Rechenweg oder die Eingabe dokumentieren.
-</code></pre></div>
-<h2 id="orientierte-flache-und-geometrischer-flacheninhalt">Orientierte Fläche und geometrischer Flächeninhalt</h2>
-<p>Ein bestimmtes Integral ist nicht immer dasselbe wie der geometrische Flächeninhalt.</p>
-<p>Wenn der Graph unterhalb der x-Achse liegt, ist das Integral negativ.</p>
-<p>Beispiel:</p>
-<p>
-<script type="math/tex; mode=display">
-f(x)=-x
-</script>
-</p>
-<p>im Intervall <script type="math/tex">[0;2]</script>.</p>
-<pre><code class="language-text">∫(-x, x, 0, 2)
-</code></pre>
-<p>Ergebnis:</p>
-<pre><code class="language-text">-2
-</code></pre>
-<p>Der geometrische Flächeninhalt beträgt aber:</p>
-<p>
-<script type="math/tex; mode=display">
-2
-</script>
-</p>
-<p>Das Integral ist negativ, weil die Fläche unterhalb der x-Achse liegt.</p>
-<p>!!! Achtung</p>
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code>Ein Integral liefert eine orientierte Fläche. Wenn ein echter Flächeninhalt gesucht ist, müssen negative Anteile positiv gezählt werden.
-</code></pre></div>
-<h2 id="flachen-zwischen-graph-und-x-achse">Flächen zwischen Graph und x-Achse</h2>
-<p>Wenn eine Funktion im betrachteten Intervall die x-Achse schneidet, musst du das Intervall an den Nullstellen aufteilen.</p>
-<p>Beispiel:</p>
-<p>
-<script type="math/tex; mode=display">
-f(x)=x^2-1
-</script>
-</p>
-<p>Die Nullstellen sind:</p>
-<p>
-<script type="math/tex; mode=display">
-x=-1 \quad \text{und} \quad x=1
-</script>
-</p>
-<p>Wenn du den Flächeninhalt im Intervall <script type="math/tex">[-2;2]</script> bestimmen willst, darfst du nicht einfach nur berechnen:</p>
-<pre><code class="language-text">∫(f(x), x, -2, 2)
-</code></pre>
-<p>Denn positive und negative Flächenanteile können sich gegenseitig aufheben.</p>
-<p>Stattdessen teilst du auf:</p>
-<pre><code class="language-text">∫(f(x), x, -2, -1)
-</code></pre>
-<pre><code class="language-text">∫(f(x), x, -1, 1)
-</code></pre>
-<pre><code class="language-text">∫(f(x), x, 1, 2)
-</code></pre>
-<p>Den mittleren Wert musst du betragsmäßig nehmen, weil der Graph dort unterhalb der x-Achse liegt.</p>
-<p>Der geometrische Flächeninhalt ergibt sich also aus der Summe der Beträge:</p>
-<pre><code class="language-text">abs(∫(f(x), x, -2, -1)) + abs(∫(f(x), x, -1, 1)) + abs(∫(f(x), x, 1, 2))
-</code></pre>
-<h2 id="flache-zwischen-zwei-graphen">Fläche zwischen zwei Graphen</h2>
-<p>Auch die Fläche zwischen zwei Graphen lässt sich mit Integralen bestimmen.</p>
-<p>Wenn <script type="math/tex">f(x)</script> oberhalb von <script type="math/tex">g(x)</script> liegt, gilt:</p>
-<p>
-<script type="math/tex; mode=display">
-A=\int_a^b (f(x)-g(x))\,dx
-</script>
-</p>
-<p>Im TI-Nspire:</p>
-<pre><code class="language-text">∫(f(x) - g(x), x, a, b)
-</code></pre>
-<p>Wenn du nicht sicher bist, welche Funktion oben liegt, solltest du die Graphen zeichnen oder die Schnittpunkte und Funktionswerte prüfen.</p>
-<p>Falls sich die Graphen im betrachteten Intervall schneiden, musst du auch hier das Intervall an den Schnittpunkten aufteilen.</p>
-<h2 id="beispiel-flache-zwischen-zwei-funktionen">Beispiel: Fläche zwischen zwei Funktionen</h2>
-<p>Gegeben sind:</p>
-<p>
-<script type="math/tex; mode=display">
-f(x)=x+2
-</script>
-</p>
-<p>und</p>
-<p>
-<script type="math/tex; mode=display">
-g(x)=x^2
-</script>
-</p>
-<p>Zuerst definierst du:</p>
-<pre><code class="language-text">f(x) := x + 2
-</code></pre>
-<pre><code class="language-text">g(x) := x^2
-</code></pre>
-<p>Die Schnittpunkte erhältst du durch:</p>
-<pre><code class="language-text">solve(f(x) = g(x), x)
-</code></pre>
-<p>Die Lösungen sind:</p>
-<p>
-<script type="math/tex; mode=display">
-x=-1 \quad \text{und} \quad x=2
-</script>
-</p>
-<p>Im Intervall <script type="math/tex">[-1;2]</script> liegt <script type="math/tex">f(x)</script> oberhalb von <script type="math/tex">g(x)</script>. Deshalb berechnest du:</p>
-<pre><code class="language-text">∫(f(x) - g(x), x, -1, 2)
-</code></pre>
-<p>Das Ergebnis ist der Flächeninhalt zwischen den beiden Graphen.</p>
-<h2 id="anwendung-bestand-aus-anderungsrate">Anwendung: Bestand aus Änderungsrate</h2>
-<p>Integrale werden häufig verwendet, wenn eine Änderungsrate gegeben ist.</p>
-<p>Beispiel:</p>
-<p>Eine Geschwindigkeit <script type="math/tex">v(t)</script> beschreibt, wie schnell sich ein Objekt bewegt. Dann gibt das Integral über die Geschwindigkeit die zurückgelegte Strecke beziehungsweise Ortsänderung an:</p>
-<p>
-<script type="math/tex; mode=display">
-s=\int_a^b v(t)\,dt
-</script>
-</p>
-<p>Wenn <script type="math/tex">v(t)</script> immer positiv ist, entspricht das direkt dem zurückgelegten Weg. Wenn <script type="math/tex">v(t)</script> auch negativ wird, muss man zwischen Ortsänderung und insgesamt zurückgelegtem Weg unterscheiden.</p>
-<h2 id="typische-eingaben">Typische Eingaben</h2>
-<h3 id="stammfunktion-bestimmen">Stammfunktion bestimmen</h3>
-<pre><code class="language-text">∫(3x^2 - 4x + 1, x)
-</code></pre>
-<h3 id="bestimmtes-integral-berechnen">Bestimmtes Integral berechnen</h3>
-<pre><code class="language-text">∫(x^2, x, 0, 3)
-</code></pre>
-<h3 id="integral-einer-definierten-funktion">Integral einer definierten Funktion</h3>
-<pre><code class="language-text">f(x) := x^2 - 1
-</code></pre>
-<pre><code class="language-text">∫(f(x), x, -2, 2)
-</code></pre>
-<h3 id="flacheninhalt-mit-betrag">Flächeninhalt mit Betrag</h3>
-<pre><code class="language-text">abs(∫(f(x), x, -2, -1)) + abs(∫(f(x), x, -1, 1)) + abs(∫(f(x), x, 1, 2))
-</code></pre>
-<h2 id="typische-fehler">Typische Fehler</h2>
-<p>Ein häufiger Fehler ist, das bestimmte Integral automatisch als Flächeninhalt zu deuten. Das ist nur dann richtig, wenn die Funktion im gesamten Intervall oberhalb der x-Achse liegt.</p>
-<p>Ein weiterer Fehler besteht darin, die Integrationsvariable zu vergessen. Bei einer Funktion mit der Variablen <script type="math/tex">x</script> muss auch nach <script type="math/tex">x</script> integriert werden.</p>
-<p>Außerdem wird bei Stammfunktionen oft die Konstante <script type="math/tex">C</script> vergessen. Der TI-Nspire zeigt sie möglicherweise nicht an, aber mathematisch gehört sie dazu.</p>
-<p>Auch die Grenzen müssen zur Aufgabe passen. In Sachkontexten haben die Grenzen oft eine Bedeutung, zum Beispiel Zeitpunkte, Stückzahlen oder Längen.</p>
-<h2 id="didaktischer-bezug-zum-kernlehrplan-nrw">Didaktischer Bezug zum Kernlehrplan NRW</h2>
-<p>Die Arbeit mit Integralen und Stammfunktionen unterstützt zentrale Kompetenzen des Kernlehrplans.</p>
-<p>In der EF kann der Integralbegriff vorbereitet werden, indem Flächen unter Graphen, Änderungsraten und Summenprozesse anschaulich betrachtet werden.</p>
-<p>In der Q1 stehen besonders der Zusammenhang zwischen Ableitung und Stammfunktion, der Hauptsatz der Differential- und Integralrechnung sowie die Berechnung bestimmter Integrale im Vordergrund.</p>
-<p>In der Q2 werden Integrale häufig in komplexeren Sachzusammenhängen verwendet. Dazu gehören Flächen zwischen Graphen, Bestände aus Änderungsraten, Rekonstruktion von Größen und Anwendungen in realitätsnahen Modellierungen.</p>
-<p>Digitale Werkzeuge wie der TI-Nspire sollen dabei nicht nur Ergebnisse liefern, sondern Darstellungswechsel ermöglichen: vom Term zum Graphen, vom Graphen zur Fläche und vom Integral zur Interpretation.</p>
-<h2 id="was-gehort-zu-einer-vollstandigen-losung">Was gehört zu einer vollständigen Lösung?</h2>
-<p>Eine vollständige Lösung besteht nicht nur aus der TI-Nspire-Eingabe.</p>
-<p>Du solltest immer angeben:</p>
-<ol>
-<li>welche Funktion betrachtet wird,</li>
-<li>welches Intervall relevant ist,</li>
-<li>welches Integral berechnet wird,</li>
-<li>welches Ergebnis der TI-Nspire liefert,</li>
-<li>wie das Ergebnis im Zusammenhang gedeutet wird.</li>
-</ol>
-<p>Unvollständig wäre:</p>
-<pre><code class="language-text">9
-</code></pre>
-<p>Besser ist:</p>
-<pre><code class="language-text">Das Integral von f(x)=x^2 im Intervall [0;3] beträgt 9. Da der Graph in diesem Intervall oberhalb der x-Achse liegt, entspricht dies einem Flächeninhalt von 9 Flächeneinheiten.
-</code></pre>
 <h2 id="checkliste">Checkliste</h2>
 <p>Prüfe vor dem Abschreiben deines Ergebnisses:</p>
 <ul>
@@ -660,26 +388,8 @@ s=\int_a^b v(t)\,dt
 <li>Habe ich die richtige Integrationsvariable verwendet?</li>
 <li>Sind die Grenzen korrekt?</li>
 <li>Suche ich eine Stammfunktion oder ein bestimmtes Integral?</li>
-<li>Muss ich die Konstante <script type="math/tex">C</script> ergänzen?</li>
-<li>Liegt der Graph oberhalb oder unterhalb der x-Achse?</li>
-<li>Muss ich das Intervall an Nullstellen oder Schnittpunkten aufteilen?</li>
-<li>Habe ich das Ergebnis im Sachzusammenhang interpretiert?</li>
+<li>Muss ich eine Konstante <script type="math/tex">C</script> ergänzen?</li>
 </ul>
-<h2 id="kurzzusammenfassung">Kurzzusammenfassung</h2>
-<p>Eine Stammfunktion <script type="math/tex">F</script> zu einer Funktion <script type="math/tex">f</script> erfüllt:</p>
-<p>
-<script type="math/tex; mode=display">
-F'(x)=f(x)
-</script>
-</p>
-<p>Ein unbestimmtes Integral liefert eine Stammfunktion:</p>
-<pre><code class="language-text">∫(f(x), x)
-</code></pre>
-<p>Ein bestimmtes Integral berechnet die orientierte Fläche im Intervall <script type="math/tex">[a;b]</script>:</p>
-<pre><code class="language-text">∫(f(x), x, a, b)
-</code></pre>
-<p>Für den Flächeninhalt musst du beachten, ob der Graph oberhalb oder unterhalb der x-Achse liegt. Bei Vorzeichenwechseln musst du das Intervall aufteilen.</p>
-<p>Der TI-Nspire ist ein hilfreiches Werkzeug, ersetzt aber nicht die mathematische Deutung. Entscheidend ist, dass du verstehst, was berechnet wurde und was das Ergebnis bedeutet.</p>
 </section>
 
             </main>
