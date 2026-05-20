@@ -1,0 +1,66 @@
+extra_javascript: 
+    - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+extra_css:
+  - stylesheets/fira_code.css
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      use_pygments: true
+      pygments_style: default
+      noclasses: true
+  - pymdownx.inlinehilite
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - fenced_code
+  - extra
+  - tables
+  - mdx_math:
+      enable_dollar_delimiter: true
+
+site_name: CAS/MMS am DKG
+site_url: https://herrnussbaum.github.io/how-to-cas/
+
+nav:
+- Home: index.md
+- Befehle: 
+    - Funktionen Definieren: befehle/funktion_definieren.md
+    - Solve und Zeros: befehle/solve_und_zeros.md
+    - fMin und fMax: befehle/fmin_und_fmax.md
+    - Ableitungen: befehle/ableitung.md
+    - Tangenten: befehle/tangenten.md
+    - Integrale und Stammfunktionen: befehle/integrale.md
+    # - Gleichungssysteme lösen: befehle/gleichungssysteme.md
+# - Funktionen zeichnen:
+#    - Funktionen aus dem Calculator übernehmen: zeichnen/calculator.md
+#    - Nullstellen: zeichnen/nullstellen.md
+#    - Extrempunkte: zeichnen/extrempunkte.md
+#    - Tangenten: zeichnen/tangenten.md
+#    - Sekanten: zeichnen/sekanten.md
+#- Kontakt: about.md
+
+theme:
+  name: material
+  logo: img/Logo_klein.png
+  favicon: img/favicon.ico
+  language: de
+  palette:
+    primary: custom
+    accent: custom
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.sections
+    - navigation.top
+    - toc.integrate
+    - content.code.copy
+
+copyright: Mathematik Sekundarstufe II | NUß
+extra:
+  generator: false

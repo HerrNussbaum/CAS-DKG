@@ -1,0 +1,67 @@
+:root {
+  --md-text-font: "Fira Sans"; 
+  --md-code-font: "Fira Code VF";
+}
+
+:root  > * {
+  --md-primary-fg-color:             hsl(0, 0%, 0%);
+  --md-accent-fg-color:              hsl(5.35, 81.347%, 62.157%);
+  --md-accent-fg-color--transparent: hsl(5.35, 81.347%, 62.157%);
+  --md-primary-bg-color:             hsl(0, 0%, 100%);
+  --md-typeset-a-color:              hsl(5.35, 100%, 62.157%);
+}
+
+.md-header {
+  background: linear-gradient(45deg, hsl(282 79.6% 38.4%) 0%, hsl(5.35, 81.347%, 62.157%), hsl(49 97.9% 62.2%) 100%);
+}
+
+.md-footer {
+  background:                   hsl(0 0% 0%);
+}
+
+
+.md-header__button.md-logo {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 5;
+  padding-bottom: 5;
+}
+
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 50%;
+  width: 50%;
+}
+
+.md-header {
+  font-family: "Fira Code VF";  
+}
+.md-typeset h1 {
+    color:  hsl(5.35, 81.347%, 62.157%);
+    font-family: "Fira Code VF";
+}
+
+.md-typeset h2 {
+    color:  hsl(5.35, 81.347%, 62.157%);
+    font-family: "Fira Code VF";
+}
+
+.md-typeset h3 {
+    color:  hsl(5.35, 81.347%, 62.157%);
+    font-family: "Fira Code VF";
+}
+
+.md-typeset h4 {
+    color:  hsl(5.35, 81.347%, 62.157%);
+    font-family: "Fira Code VF";
+}
+
+.md-typeset h5 {
+    color:  hsl(5.35, 81.347%, 62.157%);
+    font-family: "Fira Code VF";
+}
+
+.md-typeset h6 {
+    color:  hsl(5.35, 81.347%, 62.157%);
+    font-family: "Fira Code VF";
+}
