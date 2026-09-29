@@ -467,6 +467,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#ableitungsfunktion-bei-funktionsscharen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ableitungsfunktion bei Funktionsscharen
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -598,6 +609,10 @@ f'(x)=2x
 <p>Am Dreikönigsgymnasium haben wir uns darauf geeinigt, dass Ableitungsfunktionen im CAS, wenn die Funktion <code>f(x)</code> heißt,  mit <code>fs(x)</code> bezeichnet werden. Die zweite Ableitung würde dann entsprechend <code>fss(x)</code> heißen. In manchen Sachkontexten kann es aber auch sinnvoll sein die in den Aufgaben verwendeten Namen zu verwenden. So werden zurückgelegte Strecken oft mit <code>s(t)</code>und deren Ableitung, welche in diesen Sachkontexten die Geschwindigkeit der Bewegen ist, mit <code>v(t)</code>bezeichnet. </p>
 <p>Hier ein paar Beispiele dazu:</p>
 <p><img src="..\..\img\ableitung2.png" alt="Ableitung"/></p>
+<h2 id="ableitungsfunktion-bei-funktionsscharen">Ableitungsfunktion bei Funktionsscharen</h2>
+<p>Bei Funktionsscharen ist Vorsicht geboten. </p>
+<p><img src="..\..\img\funktionsscharen.png" alt="Ableitung"/></p>
+<p>Definiert man eine Funktionsschar so, wie oben im Bild beschrieben, kann es zu Fehlern kommen, wenn man z.B. bei <code>fs(a,x)</code> für <code>x</code> den Wert <code>a</code>einsetzen möchte, also <code>f(a,a)</code>. Was hier intern passiert ist, dass das CAS aus <script type="math/tex">fs(a,x) = \frac{d}{dx} f(a,x)</script> nach dem Einsetzen von <code>a</code> folgendes macht: <script type="math/tex">fs(a,a) = \frac{d}{da} f(a,a)</script>. Das CAS leitet also nun nach <code>a</code> statt nach <code>x</code> ab. Um dies zu umgehen kann man vom CAS <script type="math/tex">\frac{d}{dx} f(a,x)</script> berechnen lassen und definiert dann <code>fs(a,x)</code> ohne den Befehl <script type="math/tex">\frac{d}{dx} f(a,x)</script> zu verwenden. In diesem Fall wäre das dann <script type="math/tex">fs(a,x):= \frac{-x\cdot(x-2a)}{48}</script>.</p>
 
 
 
