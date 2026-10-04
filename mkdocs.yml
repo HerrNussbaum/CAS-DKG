@@ -36,6 +36,7 @@ nav:
     - Ableitungen: befehle/ableitung.md
     - Tangenten: befehle/tangenten.md
     - Integrale und Stammfunktionen: befehle/integrale.md
+    - Prüfungsmodus: befehle/pruefungsmodus.md
     # - Gleichungssysteme lösen: befehle/gleichungssysteme.md
 # - Funktionen zeichnen:
 #    - Funktionen aus dem Calculator übernehmen: zeichnen/calculator.md
